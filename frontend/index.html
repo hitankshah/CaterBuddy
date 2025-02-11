@@ -1,226 +1,100 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CaterBuddy</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <style>
-        body {
-            background-image: url('https://wallpaperaccess.com/full/5600194.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            font-family: Arial, sans-serif;
-            color: #fff;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-        }
-        section {
-            background: rgba(0, 0, 0, 0.5);
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 600px;
-        }
-        button {
-            background: #ff9800;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #e68900;
-        }
-        footer {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to CaterBuddy</h1>
-    </header>
-    
-    <section class="landing-page">
-        <h2>Landing Page</h2>
-        <nav>
-            <ul>
-                <li><a href="#registration">Registration Page</a></li>
-                <li><a href="#vendor-login">Vendor Login</a></li>
-                <li><a href="#cater-login">Cater Login</a></li>
-                <li><a href="#download">Download Page</a></li>
-            </ul>
-        </nav>
-    </section>
-    
-    <section id="vendor-login">
-        <h2>Vendor Login</h2>
-        <button>List Items</button>
-        <button>View Orders</button>
-    </section>
-    
-    <section id="cater-login">
-        <h2>Cater Login</h2>
-        <button>Estimation Page</button>
-    </section>
-    
-    <section id="client-page">
-        <h2>Client Page</h2>
-        <form>
-            <input type="email" placeholder="Email" required>
-            <input type="text" placeholder="Contact" required>
-            <input type="text" placeholder="Cater Name" required>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-    
-    <section id="menu">
-        <h2>Menu</h2>
-        <ul>
-            <li>Community</li>
-            <li>Items</li>
-            <li>Item Amount</li>
-            <li>Total Amount Per Item</li>
-            <li>Total Quantity Per Item</li>
-        </ul>
-    </section>
-    
-    <section id="vendor-list">
-        <h2>Vendor List</h2>
-        <p>Item Amount</p>
-        <p>Availability of Item</p>
-    </section>
-    
-    <section id="vendor-page">
-        <h2>Vendor Page</h2>
-        <form>
-            <input type="email" placeholder="Email Address" required>
-            <input type="text" placeholder="Contact Number" required>
-        </form>
-    </section>
-    
-    <section id="item-list">
-        <h2>Item List</h2>
-        <ul>
-            <li>Item Name</li>
-            <li>Item Price</li>
-            <li>Item Availability</li>
-        </ul>
-    </section>
-    
-    <section id="orders">
-        <h2>Orders</h2>
-        <ul>
-            <li>Item Name</li>
-            <li>Item Amount</li>
-            <li>Delivery Date</li>
-        </ul>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 CaterBuddy</p>
-    </footer>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CaterBuddy</title>
+    <meta name="description" content="Your Premium Catering Solution"/>
+    <meta name="author" content="CaterBuddy">
+    
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <style>
+         @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script&family=Satisfy&family=Lobster&display=swap');
         body {
-            background-image: url('images/background.jpg');
-            background-size: cover;
+            background-image: url('images/background.jpg') ;
+            background-size:cover;
             background-position: center;
-            display: flex;
+            display:flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            width: 100%;
             margin: 0;
             font-family: 'Arial', sans-serif;
             text-align: center;
             color: white;
         }
         .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
             /* background: rgba(0, 0, 0, 0.7); */
-            top: 0;
-            padding: 250 px;
             border-radius: 10px;
+            position:absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
         }
         .navbar a {
             color: white;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
             text-decoration: none;
             padding: 10px 15px;
             font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         .navbar a:hover {
             background: rgba(255, 255, 255, 0.3);
             border-radius: 5px;
         }
         #content {
-            background: none; /* Remove background */
-            padding: 0; /* Remove padding */
-            border-radius: 0; /* Remove border radius */
-            width: auto; /* Set width to auto */
+            background: none;
+            padding: 0;
+            border-radius: 0;
+            width: auto;
         }
-
         h1 {
-            font-size: 36px;
+            font-size: 50px;
+            font-weight: bold;
             margin-bottom: 10px;
-            font-style:normal;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family: Dancing Script;
             color: white;
         }
         p {
             font-size: 20px;
-            color:white;
+            color: white;
         }
         body::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7); /* Dark overlay */
-        z-index: -1;
-}
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: -2;
+        }
     </style>
-
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.html">Home</a>
+        <!-- <a href="index.html">Home</a>
         <a href="register.html">Register</a>
         <a href="download.html">Download</a>
         <a href="client.html">Client</a>
-        <a href="vendor.html">Vendor</a>
+        <a href="vendor.html">Vendor</a> -->
+        <a href="login.html">Login</a>
+        <a href="signup.html">Signup</a>
     </nav>
+    
     <div id="content">
         <h1>Welcome to CaterBuddy</h1>
-       
         <p>Select a page from the navigation bar.</p>
     </div>
+
     <script src="script.js"></script>
 </body>
-</html>
-
 </html>

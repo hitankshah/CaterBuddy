@@ -197,7 +197,7 @@ body::before {
     z-index: 2; /* Ensures text is above the faded background */
 }
 
-.navbar {
+/* .navbar { old css
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -205,6 +205,17 @@ body::before {
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
+} */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed; /* Fixes navbar at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures it stays above other elements */
 }
 
 .navbar a {
@@ -218,4 +229,38 @@ body::before {
     margin-top: 80px;
     font-size: 22px;
     font-weight: bold;
+}
+/*-------login and signup css----*/
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.login-container, .signup-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
 }
